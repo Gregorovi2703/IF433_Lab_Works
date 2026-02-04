@@ -1,6 +1,6 @@
 package oop_00000105999_chaychinhendri.week01
 
-fun main() {
+fun main( ) {
     val radius = 7.0
     val pi = 3.14
 
