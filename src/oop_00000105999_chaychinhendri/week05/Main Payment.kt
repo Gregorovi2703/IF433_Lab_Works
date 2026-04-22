@@ -11,5 +11,11 @@ fun main() {
     for (method in payments) {
         println("\n${method.accountName} mencoba bayar 75000")
         method.processPayment(75000.0)
+
+        if (method is EWallet) {
+            println("Top up otomatis 50000...")
+            method.topUp(50000.0)
+            method.processPayment(75000.0)
+        }
     }
 }
